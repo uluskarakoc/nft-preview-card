@@ -1,0 +1,45 @@
+body {
+  background-color: $main-bg-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main {
+  background-color: $card-bg-blue;
+  height: 27rem;
+  width: 20rem;
+  border-radius:1rem ;
+  .card-body {
+    padding: 2rem;
+    img {
+      width: 16rem;
+      border-radius: .6rem;
+    }
+    .überschrift {
+      color: $white;
+      font-weight: 600;
+    }
+    .paragraph {
+      color: $soft-blue;
+    }
+    .icons {
+        display: flex;
+        justify-content: space-between;
+      .eth {
+        color: $cyan;
+      }
+      .days {
+        color: $soft-blue;
+      }
+    }
+    .footer {
+      .creation {
+        color: $soft-blue;
+      }
+      .ulus {
+        color: $white;
+      }
+    }
+  }
+}

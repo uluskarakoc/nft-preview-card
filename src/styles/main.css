@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Slabo+27px&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+html img,
+body img {
+  width: 100%;
+}
+html ul,
+body ul {
+  list-style-type: none;
+}
+html a,
+body a {
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main {
+  background-color: hsl(216deg, 50%, 16%);
+  height: 27rem;
+  width: 20rem;
+  border-radius: 1rem;
+}
+.main .card-body {
+  padding: 2rem;
+}
+.main .card-body img {
+  width: 16rem;
+  border-radius: 0.6rem;
+}
+.main .card-body .überschrift {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+}
+.main .card-body .paragraph {
+  color: hsl(215deg, 51%, 70%);
+}
+.main .card-body .icons {
+  display: flex;
+  justify-content: space-between;
+}
+.main .card-body .icons .eth {
+  color: hsl(178deg, 100%, 50%);
+}
+.main .card-body .icons .days {
+  color: hsl(215deg, 51%, 70%);
+}
+.main .card-body .footer .creation {
+  color: hsl(215deg, 51%, 70%);
+}
+.main .card-body .footer .ulus {
+  color: hsl(0deg, 0%, 100%);
+}
+
+/*# sourceMappingURL=main.css.map */

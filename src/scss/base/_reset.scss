@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  //font-family: "Slabo 27px", serif;
+  img {
+    width: 100%;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
