@@ -4,51 +4,83 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.main {
-  background-color: $card-bg-blue;
-  height: 28rem;
-  width: 20rem;
-  border-radius:1rem ;
-  
-  .card-body {
-    padding: 2rem;
-    img {
-      width: 16rem;
-      border-radius: .6rem;
-    }
-    .überschrift {
-      color: $white;
-      font-weight: 600;
-    }
-    .paragraph {
-      color: $soft-blue;
-    }
-    .icons {
+  .main {
+    background-color: $card-bg-blue;
+    height: 29rem;
+    width: 20rem;
+    border-radius: 1rem;
+
+    .card-body {
+      padding: 2rem;
+      img {
+        width: 16rem;
+        border-radius: 0.6rem;
+      }
+      .überschrift {
+        color: $white;
+        font-weight: 600;
+      }
+      .paragraph {
+        color: $soft-blue;
+      }
+      .icons {
         display: flex;
         justify-content: space-between;
-      .eth {
-        color: $cyan;
+        align-items: center;
+        width: 16rem;
+
+        .eth-icon {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 2rem;
+          width: 5.5rem;
+          .eth {
+            color: $cyan;
+            svg{
+                margin-top: .2rem;
+              }
+          }
+        }
+        .days-icon {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: $soft-blue;
+          height: 2rem;
+          width: 5.8rem;
+          svg{
+            margin-top: .3rem;
+          }
+          
+        }
       }
-      .days {
-        color: $soft-blue;
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          width: 2rem;
+          border: 2px solid white;
+          border-radius: 50%;
+        }
+        .creation {
+          color: $soft-blue;
+        }
+        .ulus {
+          color: $white;
+        }
       }
-    }
-    .footer {
-      .creation {
-        color: $soft-blue;
+      div {
+        margin-bottom: 0.3rem;
       }
-      .ulus {
-        color: $white;
-      }
-    }
-    div{
-        margin-bottom: .3rem;
-    }
-    .line{
+      .line {
         width: 16rem;
         height: 1px;
         background-color: $soft-blue;
+        margin-bottom: 0.7rem;
+      }
     }
   }
 }

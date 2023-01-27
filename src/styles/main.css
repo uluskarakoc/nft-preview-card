@@ -33,50 +33,80 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
-.main {
+body .main {
   background-color: hsl(216deg, 50%, 16%);
-  height: 28rem;
+  height: 29rem;
   width: 20rem;
   border-radius: 1rem;
 }
-.main .card-body {
+body .main .card-body {
   padding: 2rem;
 }
-.main .card-body img {
+body .main .card-body img {
   width: 16rem;
   border-radius: 0.6rem;
 }
-.main .card-body .überschrift {
+body .main .card-body .überschrift {
   color: hsl(0deg, 0%, 100%);
   font-weight: 600;
 }
-.main .card-body .paragraph {
+body .main .card-body .paragraph {
   color: hsl(215deg, 51%, 70%);
 }
-.main .card-body .icons {
+body .main .card-body .icons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 16rem;
 }
-.main .card-body .icons .eth {
+body .main .card-body .icons .eth-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  width: 5.5rem;
+}
+body .main .card-body .icons .eth-icon .eth {
   color: hsl(178deg, 100%, 50%);
 }
-.main .card-body .icons .days {
+body .main .card-body .icons .eth-icon .eth svg {
+  margin-top: 0.2rem;
+}
+body .main .card-body .icons .days-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(215deg, 51%, 70%);
+  height: 2rem;
+  width: 5.8rem;
+}
+body .main .card-body .icons .days-icon svg {
+  margin-top: 0.3rem;
+}
+body .main .card-body .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main .card-body .footer img {
+  width: 2rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+body .main .card-body .footer .creation {
   color: hsl(215deg, 51%, 70%);
 }
-.main .card-body .footer .creation {
-  color: hsl(215deg, 51%, 70%);
-}
-.main .card-body .footer .ulus {
+body .main .card-body .footer .ulus {
   color: hsl(0deg, 0%, 100%);
 }
-.main .card-body div {
+body .main .card-body div {
   margin-bottom: 0.3rem;
 }
-.main .card-body .line {
+body .main .card-body .line {
   width: 16rem;
   height: 1px;
   background-color: hsl(215deg, 51%, 70%);
+  margin-bottom: 0.7rem;
 }
 
 /*# sourceMappingURL=main.css.map */
