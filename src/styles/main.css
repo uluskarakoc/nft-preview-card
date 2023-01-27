@@ -36,7 +36,7 @@ body {
 
 .main {
   background-color: hsl(216deg, 50%, 16%);
-  height: 27rem;
+  height: 28rem;
   width: 20rem;
   border-radius: 1rem;
 }
@@ -69,6 +69,14 @@ body {
 }
 .main .card-body .footer .ulus {
   color: hsl(0deg, 0%, 100%);
+}
+.main .card-body div {
+  margin-bottom: 0.3rem;
+}
+.main .card-body .line {
+  width: 16rem;
+  height: 1px;
+  background-color: hsl(215deg, 51%, 70%);
 }
 
 /*# sourceMappingURL=main.css.map */

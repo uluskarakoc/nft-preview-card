@@ -7,9 +7,10 @@ body {
 }
 .main {
   background-color: $card-bg-blue;
-  height: 27rem;
+  height: 28rem;
   width: 20rem;
   border-radius:1rem ;
+  
   .card-body {
     padding: 2rem;
     img {
@@ -40,6 +41,14 @@ body {
       .ulus {
         color: $white;
       }
+    }
+    div{
+        margin-bottom: .3rem;
+    }
+    .line{
+        width: 16rem;
+        height: 1px;
+        background-color: $soft-blue;
     }
   }
 }
