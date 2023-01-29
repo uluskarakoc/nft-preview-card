@@ -42,13 +42,24 @@ body .main {
 body .main .card-body {
   padding: 2rem;
 }
-body .main .card-body img {
-  width: 16rem;
-  border-radius: 0.6rem;
+body .main .card-body .image {
+  position: relative;
+  cursor: pointer;
+}
+body .main .card-body .image .card-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 1s;
 }
 body .main .card-body .überschrift {
   color: hsl(0deg, 0%, 100%);
   font-weight: 600;
+}
+body .main .card-body .überschrift:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 body .main .card-body .paragraph {
   color: hsl(215deg, 51%, 70%);
@@ -85,19 +96,25 @@ body .main .card-body .icons .days-icon svg {
 }
 body .main .card-body .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 body .main .card-body .footer img {
   width: 2rem;
+  height: 2rem;
   border: 2px solid white;
   border-radius: 50%;
 }
 body .main .card-body .footer .creation {
   color: hsl(215deg, 51%, 70%);
+  margin-left: 0.9rem;
 }
 body .main .card-body .footer .ulus {
   color: hsl(0deg, 0%, 100%);
+  margin-left: 0.3rem;
+}
+body .main .card-body .footer .ulus:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 body .main .card-body div {
   margin-bottom: 0.3rem;

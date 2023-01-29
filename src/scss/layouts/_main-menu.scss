@@ -4,6 +4,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   .main {
     background-color: $card-bg-blue;
     height: 29rem;
@@ -12,14 +13,27 @@ body {
 
     .card-body {
       padding: 2rem;
-      img {
-        width: 16rem;
-        border-radius: 0.6rem;
+      .image {
+        position: relative;
+        cursor: pointer;
+        .card-icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+          transition: opacity 1s;
+        }
       }
+
       .überschrift {
         color: $white;
         font-weight: 600;
       }
+      .überschrift:hover {
+        color: $cyan;
+      }
+
       .paragraph {
         color: $soft-blue;
       }
@@ -37,9 +51,9 @@ body {
           width: 5.5rem;
           .eth {
             color: $cyan;
-            svg{
-                margin-top: .2rem;
-              }
+            svg {
+              margin-top: 0.2rem;
+            }
           }
         }
         .days-icon {
@@ -49,27 +63,32 @@ body {
           color: $soft-blue;
           height: 2rem;
           width: 5.8rem;
-          svg{
-            margin-top: .3rem;
+          svg {
+            margin-top: 0.3rem;
           }
-          
         }
       }
       .footer {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
 
         img {
           width: 2rem;
+          height: 2rem;
           border: 2px solid white;
           border-radius: 50%;
         }
         .creation {
           color: $soft-blue;
+          margin-left: 0.9rem;
         }
         .ulus {
           color: $white;
+          margin-left: 0.3rem;
+        }
+        .ulus:hover {
+          color: $cyan;
         }
       }
       div {
