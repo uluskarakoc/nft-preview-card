@@ -10,12 +10,14 @@ body {
     height: 29rem;
     width: 20rem;
     border-radius: 1rem;
-
     .card-body {
       padding: 2rem;
       .image {
         position: relative;
         cursor: pointer;
+        .card-image {
+          border-radius: 1rem;
+        }
         .card-icon {
           position: absolute;
           top: 50%;
@@ -23,9 +25,29 @@ body {
           transform: translate(-50%, -50%);
           opacity: 0;
           transition: opacity 1s;
+          width: 48px;
+          height: 48px;
         }
       }
 
+      .image::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0.3rem;
+        left: 0;
+        border-radius: 1rem;
+        background-color: transparent;
+        transition: background-color 1s;
+      }
+      .image:hover::after {
+        background-color: rgba(240, 248, 255, 0.4);
+        
+      }
+      .image:hover .card-icon {
+        opacity: 1;
+      }
       .überschrift {
         color: $white;
         font-weight: 600;
